@@ -1,7 +1,3 @@
-如果你的 UI/UX 库 PlayEstate 没有封装为 npm 包，并且需要开发者自己安装 Tailwind CSS，那么你可以在 README.md 文件中相应地调整安装和使用指南。以下是一个示例：
-
----
-
 # PlayEstate UI/UX 库 🎨🖌️
 
 PlayEstate 是一个基于 Tailwind CSS 框架的 UI/UX 库，旨在为开发者提供一套美观、实用、且易于使用的界面组件。
@@ -43,7 +39,3 @@ PlayEstate 是一个基于 Tailwind CSS 框架的 UI/UX 库，旨在为开发者
 ## 许可证 📄
 
 PlayEstate 遵循 MIT 许可证。查看 [LICENSE](LICENSE) 文件了解更多详情。
-
----
-
-你可以根据实际情况调整以上内容，确保它能够清晰地指导开发者如何使用你的 UI/UX 库。
