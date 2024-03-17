@@ -24,6 +24,16 @@ module.exports = {
         "2xl": "1440px",
         // => @media (min-width: 1440px) { ... }
       },
+      transitionDuration: {
+        btn: "0.2s", // 按钮的动画的 transition 时间
+      },
+      transitionTimingFunction: {
+        btn: "ease-in-out", // 按钮的动画的 timing 函数
+      },
+      scale: {
+        acitve: "0.95",
+        hover: "1.05",
+      },
     },
   },
   plugins: [],
