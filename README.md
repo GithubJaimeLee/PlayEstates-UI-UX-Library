@@ -1,41 +1,77 @@
-# PlayEstate UI/UX 库 🎨🖌️
-
-PlayEstate 是一个基于 Tailwind CSS 框架的 UI/UX 库，旨在为开发者提供一套美观、实用、且易于使用的界面组件。
-
-## 特点 ✨
-
-- **易于定制**：通过 Tailwind 的工具类，你可以轻松定制组件的样式，以适应你的项目需求。
-- **响应式设计**：所有组件都经过精心设计，以确保在不同屏幕尺寸上的表现一致性。
-- **组件丰富**：提供了一系列常用的 UI 组件，如按钮、输入框、卡片等，帮助你快速搭建界面。
-
 ## 准备工作 🛠️
 
-在使用 PlayEstate 之前，你需要先安装 Tailwind CSS。请参考 [Tailwind CSS 官方文档](https://tailwindcss.com/docs/installation) 进行安装。
+在使用 PlayEstate 之前，你需要先安装 Tailwind CSS。以下是在不同框架中安装 Tailwind CSS 的方法：
 
-## 使用 🚀
+### Vue
 
-1. 在你的项目中引入 Tailwind CSS：
+1. 安装 Tailwind CSS：
 
-    ```html
-    <link href="/path/to/tailwind.css" rel="stylesheet">
+    ```bash
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init
     ```
 
-2. 使用 PlayEstate 的组件构建你的界面：
+2. 在 `tailwind.config.js` 文件中配置 Tailwind CSS：
 
-    ```html
-    <button class="play-btn">点击我</button>
-    <div class="play-card">这是一张卡片</div>
+    ```javascript
+    module.exports = {
+      content: ["./src/**/*.{html,js,vue}"],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
     ```
 
-    请参考 PlayEstate 的文档了解更多组件的使用方法。
+3. 在你的项目中引入 Tailwind CSS：
 
-## 贡献 🤝
+    在 `main.js` 或 `main.ts` 文件中：
 
-欢迎对 PlayEstate 做出贡献！你可以通过以下方式参与：
+    ```javascript
+    import './index.css'
+    ```
 
-- 提交问题或建议
-- 分享和推广 PlayEstate
+    在 `index.css` 文件中：
 
-## 许可证 📄
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
 
-PlayEstate 遵循 MIT 许可证。查看 [LICENSE](LICENSE) 文件了解更多详情。
+### React
+
+1. 安装 Tailwind CSS：
+
+    ```bash
+    npm install -D tailwindcss postcss autoprefixer
+    npx tailwindcss init
+    ```
+
+2. 在 `tailwind.config.js` 文件中配置 Tailwind CSS：
+
+    ```javascript
+    module.exports = {
+      content: ["./src/**/*.{js,jsx,ts,tsx}"],
+      theme: {
+        extend: {},
+      },
+      plugins: [],
+    }
+    ```
+
+3. 在你的项目中引入 Tailwind CSS：
+
+    在 `index.css` 文件中：
+
+    ```css
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    ```
+
+    在 `index.js` 或 `index.ts` 文件中：
+
+    ```javascript
+    import './index.css';
+    ```
