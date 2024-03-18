@@ -24,6 +24,10 @@ module.exports = {
         "2xl": "1440px",
         // => @media (min-width: 1440px) { ... }
       },
+      padding: {
+        btn: "2.5",
+      },
+      margin: { btn: "2.5" },
       transitionDuration: {
         btn: "0.2s", // 按钮的动画的 transition 时间
       },
