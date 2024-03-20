@@ -35,7 +35,7 @@ module.exports = {
         btn: "ease-in-out", // 按钮的动画的 timing 函数
       },
       scale: {
-        acitve: "0.95",
+        active: "0.95",
         hover: "1.05",
       },
     },
